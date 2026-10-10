@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "CLIRO Local Chrome Tab Bridge",
+  "version": "1.0.0",
+  "description": "Local, allow-listed Chrome tab controls for the CLIRO command center.",
+  "permissions": ["tabs"],
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://localhost:5173/*",
+        "http://127.0.0.1:5173/*"
+      ],
+      "js": ["content-script.js"],
+      "run_at": "document_start"
+    }
+  ]
+}

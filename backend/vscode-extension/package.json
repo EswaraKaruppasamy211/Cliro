@@ -1,0 +1,17 @@
+{
+  "name": "cliro-workspace-trust",
+  "displayName": "CLIRO Workspace Trust Bridge",
+  "description": "Reports VS Code's workspace trust state to the local CLIRO backend and opens the native trust controls only after a user request.",
+  "publisher": "cliro",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js"
+}

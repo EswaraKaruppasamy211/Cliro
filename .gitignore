@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+**/node_modules/
+**/dist/
+**/dist-ssr/
+**/logs/
+*.log
+*.sqlite
+*.sqlite3
+*.db
